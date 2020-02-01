@@ -73,7 +73,7 @@ Image text
 ===============*/
 
 .ptext {
-    font-family: 'Forum', cursive;
+    font-family: 'Forum', serif;
     position: absolute;
     top: 50%;
     width: 100%;
@@ -85,7 +85,7 @@ Image text
 }
 
 .ptext .border {
-    
+    display: inline-block;
     color: #fff;
 }
 
@@ -122,10 +122,6 @@ p {
 .section-dark {
     background-color: #282e34;
     color: #ddd;
-}
-
-.new-link[aria-describedby="footnote-label"] {
-    counter-increment: footnotes;
 }
 
 sup {
