@@ -1,0 +1,158 @@
+/* ==============
+General 
+===============*/
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.9em;
+    color: #666;
+    counter-reset: footnotes;
+}
+
+/* ==============
+Images 
+===============*/
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(min-width: 568px){
+     /*  add parallax effect for wide devices */
+    .pimg1, .pimg2,.pimg3,.pimg4,.pimg5 {
+        background-attachment: fixed;
+    }
+}
+
+.pimg2,
+.pimg3,
+.pimg4 {
+    min-height: 550px;
+}
+
+.pimg1 {
+    background-image: url('../img/donovan-simpkin-BRBMWWj1cb8-unsplash.jpg');
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url('../img/tasmanian-devil-2365434_1920.jpg');  
+}
+
+.pimg3 {
+    background-image: url('../img/sylvia-yang-igLaq2ZZ1UM-unsplash.jpg');
+    
+}
+
+.pimg4 {
+    background-image: url('../img/australia-3392456_1920.jpg');
+}
+
+.pimg5 {
+    background-image: url('../img/australia-3923963_1920.jpg');
+    min-height: 120%;
+}
+
+/* ==============
+Image text 
+===============*/
+
+.ptext {
+    font-family: 'Forum', cursive;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    
+    color: #fff;
+}
+
+.ptext strong {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 35px;
+}
+
+.ptext .border.border1 {
+    background-color: rgba(17, 17, 17, 0.5);
+    padding: 20px 30px;
+    border-radius: 35px/30px;
+}
+
+/* ==============
+Text sections 
+===============*/
+
+.section {
+    text-align: center;
+    padding: 80px 80px;
+}
+
+p {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.new-link[aria-describedby="footnote-label"] {
+    counter-increment: footnotes;
+}
+
+sup {
+    font-size: 0.75rem;
+}
+
+/* ==============
+Footer
+===============*/
+
+footer {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-name {
+    padding: 80px 0;
+}
+
+.footnotes {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.font-small {
+    font-size: 0.75rem;
+    max-width: 100%;
+}
